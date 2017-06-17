@@ -10,14 +10,16 @@
 
 html, body{
     margin: 0;
+    background: #0e0e0e;
 }
 
 /* NAV */
 nav {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0;/*
+    right: 0;*/
     margin: 10px;
+    width: 98%
 }
 nav ul {
     list-style-type: none;
@@ -29,6 +31,9 @@ nav ul {
 nav li {
     float: left;
 }
+nav li.right{
+    float: right;
+}
 nav li a {
     display: block;
     color: white;
@@ -37,12 +42,38 @@ nav li a {
     text-decoration: none;
     /*font-family: Zooja;*/
     font-size: 16px;
+    /*font-family: 'Patrick Hand SC', cursive;*/
+    font-family: 'Ubuntu Mono', monospace;
+    /*text-transform: uppercase;*/
+    -webkit-font-smoothing: antialiased;
 }
 nav li a:hover:not(.active) {
     /*background-color: #111;*/
 }
 nav .active {
     /*background-color: #4CAF50;*/
+}
+
+/* SOcial media nav */
+ul.social-media{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 1em;
+    margin-top: 15em;
+}
+ul.social-media li{
+    list-style-type: none;
+    padding: 3px;
+}
+ul.social-media li a:hover{
+    cursor: pointer;
+}
+ul.social-media li a img{
+    width: 1.8em;
+}
+ul.social-media li a img:hover{
+    width: 2.3em;
 }
 
 .hero{
