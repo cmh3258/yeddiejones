@@ -50,6 +50,10 @@ nav li a {
 nav li a:hover:not(.active) {
     /*background-color: #111;*/
 }
+nav li a:hover{
+    color: #940794;
+    cursor: pointer;
+}
 nav .active {
     /*background-color: #4CAF50;*/
 }
@@ -121,15 +125,69 @@ button{
 .recent-album{
     position: relative;
     margin: 1em;
-    height: 30em;
+    height: 43em;
 }
 img.album{
     width: 25em;
     /*border: 1px solid black;*/
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     /*padding: 4em;*/
+    
 }
-.recent-album > div {
+
+.recent-album > div{
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -6em;
+}
+
+.recent-album .info{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    margin-top: 3em;
+}
+
+
+section.music-section{
+    background-color: white;
+    padding: 3em;
+}
+
+section.music-section h3{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+}
+
+section.music-section iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.soundcloud-frame{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.col-2{
+    width: 49%;
+    display: inline-block;
+}
+
+
+.narrower{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*.recent-album > div {
     position: absolute;
     margin-top: -10%;
     left: 10%;
@@ -138,17 +196,22 @@ img.album{
 .recent-album img{
     float: left;
     /*padding: 3em;*/
-    margin: 4em;
+    /*margin: 4em;*/
 }
-.recent-album .info{
-    /*position: */
+/*.recent-album .info{
     float: right;
     width: 50%;
     margin-top: 15%;
     font-size: 19px;
     line-height: 27px;
     color: #4a4a4a;
-}
+}*/
+
+/*recent-album-center{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}*/
 
 
 section{
@@ -161,5 +224,8 @@ section{
 
 
 footer{
+    background-color: #e1e1e1;
+    color: #4a4a4a;
+    padding: 5em;
 }
 
