@@ -7,6 +7,11 @@
     font-family: Markerfield;
     src: url(markerfield.otf);
 }
+@font-face {
+    font-family: NanumScript;
+    src: url(NanumScript.ttc);
+}
+
 
 html, body{
     margin: 0;
@@ -32,6 +37,7 @@ nav ul {
     overflow: hidden;
     /*background-color: #333;*/
 }
+
 nav li {
     float: left;
 }
@@ -50,6 +56,9 @@ nav li a {
     font-family: 'Ubuntu Mono', monospace;
     /*text-transform: uppercase;*/
     -webkit-font-smoothing: antialiased;
+}
+nav.dark-nav li a{
+    color: #4a4a4a;
 }
 nav li a:hover:not(.active) {
     /*background-color: #111;*/
@@ -302,14 +311,95 @@ section.music-section iframe{
 }*/
 
 
+.album-title{}
+#youaretitle{
+    color: #47164F;
+    text-align: center;
+    padding-top: 2.6em;
+}
+
+.full-width-quote{
+    width: 70%;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 2em;
+    color: #b145e4; /*light purple*/
+    color: #ccc5d0;
+    text-align: center;
+    padding: 1em;
+}
+.full-width-quote h3{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.single-youtube-vid{
+    padding: 1em;
+    margin: 0;
+}
+
+
+.half-height-image{
+    height: 40em;
+    overflow: hidden;
+}
+
+
+
 section{
-    width: 100%;
+    /*width: 100%;*/
     background-color: #e1e1e1;
     padding: 2em;
     margin-top: 5em;
     margin-bottom: 5em;
 }
 
+.btn-section{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-box{
+    height: 47px;
+    width: 100%;
+    overflow: hidden;
+}
+.top-box img{
+    margin-top: -17em;
+}
+
+.img-embed{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.img-embed img{
+    width: 90%;
+}
+.text-over-image{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.img-embed h4{
+    position: relative;
+    font-size: 2em;
+    color: white;
+    margin: 0 auto;
+}
+
+.story-section{
+    background-color: white;
+    width: 60%;
+    font-size: 20px;
+    margin:0 auto;
+    line-height: 40px;
+}
+.story-section p{
+    color: #4a4a4a;
+}
 
 footer{
     background-color: #e1e1e1;
