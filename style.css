@@ -388,17 +388,50 @@ section{
     font-size: 2em;
     color: white;
     margin: 0 auto;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
 }
 
-.story-section{
+section#support{
+    background-color: #4ddde4;
+    margin-top: 7em;
+}
+section#support h4{
+    font-size: 3em;
+    color: #4a4a4a;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    margin: 19px;
+}
+section#support p{
+    width: 43%;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    line-height: 25px;
+    margin-bottom: 2em;
+}
+
+section.story-section{
     background-color: white;
     width: 60%;
     font-size: 20px;
     margin:0 auto;
     line-height: 40px;
+    margin-bottom: 2em;
 }
-.story-section p{
+section.story-section h3{
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+}
+section.story-section p{
     color: #4a4a4a;
+    font-family: 'Ubuntu Mono', monospace;
+    -webkit-font-smoothing: antialiased;
 }
 
 footer{
