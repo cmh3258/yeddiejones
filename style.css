@@ -17,7 +17,7 @@ html, body{
     margin: 0;
     background: #0e0e0e;
 }
-html.white > body{
+html > body{
     background: white;
 
 }
@@ -27,7 +27,7 @@ nav {
     position: absolute;
     top: 0;/*
     right: 0;*/
-    margin: 10px;
+    /*margin: 10px;*/
     width: 98%
 }
 nav ul {
@@ -71,6 +71,15 @@ nav .active {
     /*background-color: #4CAF50;*/
 }
 
+.logo-icon-svg{
+    opacity: .4;
+    padding: 0;
+    margin-left: 5px;
+}
+.logo-icon-svg:hover{
+    opacity: 1;
+}
+
 /* SOcial media nav */
 ul.social-media{
     position: fixed;
@@ -88,6 +97,7 @@ ul.social-media li a:hover{
 }
 ul.social-media li a img{
     width: 1.8em;
+    transition: all 0.3s ease;
 }
 ul.social-media li a img:hover{
     width: 2.3em;
@@ -99,6 +109,7 @@ ul.social-media li a img:hover{
 
 .hero{
     background-image: url("chris.jpg");
+    background-image: url("20170622-IMG_6733.jpg");
 
     /* Set a specific height */
     height: 70%;
@@ -186,7 +197,9 @@ img.album{
     /*position: absolute;*/
     margin: 0 auto;
     text-align: center;
-    margin-top: -6em;
+    /*margin-top: -6em;*/
+    padding: 2em;
+    margin-top: 2em;
 }
 .recent-album .info,
 .the-album .info{
@@ -195,7 +208,7 @@ img.album{
     font-size: 18px;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
-    color: white;
+    /*color: white;*/
     margin-top: 3em;
 }
 .the-album .info{
@@ -252,7 +265,7 @@ img.album{
 
 section.music-section{
     background-color: white;
-    padding: 3em;
+    padding: 1em;
 }
 
 section.music-section h3{
@@ -266,16 +279,46 @@ section.music-section iframe{
     display: block;
     margin: 0 auto;
     margin-bottom: 2em;
+    float: left;
+    padding: 1em;
+}
+
+.single-youtube-vid{
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+}
+section.single-youtube-vid iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    float: none;
+    padding: 1em;
+}
+
+.two-columns{
+    width: 80%;
+    overflow: auto;
+    margin: 0 auto;
+
+}
+.two-columns > iframe{
+    width: 45%;
+    display: inline-block;
 }
 
 .soundcloud-frame{
     width: 45%;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .col-2{
     width: 49%;
     display: inline-block;
+}
+.col-2 iframe{
+    float: none !important;
 }
 
 
@@ -334,10 +377,7 @@ section.music-section iframe{
     line-height: 60px;
 }
 
-.single-youtube-vid{
-    padding: 1em;
-    margin: 0;
-}
+
 
 
 .half-height-image{

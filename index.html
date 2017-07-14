@@ -17,6 +17,8 @@
 
     <body>
 
+
+
         <div class="alert">
             <div>
                 <h3><a href="/youare.html">New Album: You Are, out now!</a></h3>
@@ -25,22 +27,22 @@
 
         <ul class="social-media">
             <li>
-                <a href=""><img src="svg/001-soundcloud-1.svg"/></a>
+                <a href="https://soundcloud.com/yeddiejones" target="_blank"><img src="svg/001-soundcloud-1.svg"/></a>
             </li>
             <li>
-                <a href=""><img src="svg/004-youtube.svg"/></a>
+                <a href="https://www.youtube.com/channel/UChWyUbLjarf9czgy04iAKGw" target="_blank"><img src="svg/004-youtube.svg"/></a>
             </li>
             <li>
-                <a href=""><img src="svg/005-bandcamp.svg"/></a>
+                <a href="https://yeddiejones.bandcamp.com/" target="_blank"><img src="svg/005-bandcamp.svg"/></a>
             </li>
-            <li>
+            <!-- <li>
                 <a href=""><img src="svg/009-facebook.svg"/></a>
+            </li> -->
+            <li>
+                <a href="https://twitter.com/yeddiejones" target="_blank"><img src="svg/007-twitter-1.svg"/></a>
             </li>
             <li>
-                <a href=""><img src="svg/007-twitter-1.svg"/></a>
-            </li>
-            <li>
-                <a href=""><img src="svg/011-instagram.svg"/></a>
+                <a href="https://instagram.com/yeddiejones" target="_blank"><img src="svg/011-instagram.svg"/></a>
             </li>
         </ul>
 
@@ -50,14 +52,16 @@
             <nav>
                 <ul>
                     <li>
+                        <a href="/" class="logo-icon-svg">
                         <svg width="50px" height="50px" viewBox="0 -48 185 268" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
                             <desc>Created with Sketch.</desc>
                             <defs></defs>
                             <text id="YJ" stroke="none" fill="none" font-family="Markerfield-Regular, Markerfield" font-size="250" font-style="italic" font-weight="normal" letter-spacing="20.7212105">
-                                <tspan x="0.40378952" y="161" fill="#FFFFFF" fill-opacity="0.3">YJ</tspan>
+                                <tspan x="0.40378952" y="161" fill="#FFFFFF" fill-opacity="1">YJ</tspan>
                             </text>
                         </svg>
+                        </a>
                     </li>
                     <ul class="right">
                         <li><a href="/">Home</a></li>
@@ -82,6 +86,12 @@
             <!-- <h1 class="logo"><img src="logo.png"/></h1> -->
         </div>
 
+        <div class="full-width-quote">
+            <h3>
+                Welcome to the site, glad you could stop by. I'm Chris, aka yeddiejones. I make music.
+            </h3>
+        </div>
+
         <div class="recent-album">
         <!-- <div class="recent-album-center"> -->
             <div class="">
@@ -96,8 +106,11 @@
                         Tatooine lars ponda utapau solo. Dantooine yoda dagobah mon fett palpatine calamari padmé. Solo padmé hutt ackbar naboo mace twi'lek. Antilles jinn moff ackbar padmé. Jade gonk organa ackbar gonk. Dantooine kenobi hutt wedge. Secura thrawn fett fett darth tusken raider sidious. Coruscant obi-wan darth calamari kenobi fett thrawn moff sidious.
                     </p> -->
                     <div class="btn-side-by-side">
-                        <button>buy</button>
-                        <button>more info</button>
+                        <!-- <button>buy</button> -->
+                        <!-- <button>Check it out!</button> -->
+                        <form action="/youare2.html">
+                            <button type="submit" value="Go to Google">Check it out!</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -115,11 +128,19 @@
 
         <section class="music-section youtube-vids">
             <h3>Youtube Latest</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLvhSyf0DF7a1-j3_Qzfit06" frameborder="0" allowfullscreen></iframe>
+            <div class="two-columns">
+                <iframe width="560" height="285" src="https://www.youtube.com/embed/r4uGBKfcJdQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="285" src="https://www.youtube.com/embed/pCfOELqJN6w" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLv03BRrYmRb_s-V1Qg5WVUY" frameborder="0" allowfullscreen></iframe>
+            <div class="two-columns">
+                <iframe width="560" height="285" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLvhSyf0DF7a1-j3_Qzfit06" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="285" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLv03BRrYmRb_s-V1Qg5WVUY" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLtUITyzwCeZUkd4SaCl7zK1" frameborder="0" allowfullscreen></iframe>
+            <div class="two-columns">
+                <iframe width="560" height="285" src="https://www.youtube.com/embed/videoseries?list=PLNlp2PX6enLtUITyzwCeZUkd4SaCl7zK1" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section class="music-section">
@@ -133,18 +154,29 @@
             <h3>Bandcamp</h3>
             <div class="narrower">
                 <div class="col-2">
-                    <iframe style="border: 0; width: 400px; height: 425px;" src="https://bandcamp.com/EmbeddedPlayer/album=102859551/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/number-4">numbeR 4 by yeddiejones</a></iframe>
+                    <iframe style="border: 0; width: 400px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=102859551/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/number-4">numbeR 4 by yeddiejones</a></iframe>
                 </div>
 
                 <div class="col-2">
-                    <iframe style="border: 0; width: 400px; height: 425px;" src="https://bandcamp.com/EmbeddedPlayer/album=2054175714/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/pop-voices-shady-nights">Pop Voices, Shady Nights by yeddiejones</a></iframe>
+                    <iframe style="border: 0; width: 400px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2054175714/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/pop-voices-shady-nights">Pop Voices, Shady Nights by yeddiejones</a></iframe>
                 </div>
 
                 <div class="col-2">
-                    <iframe style="border: 0; width: 400px; height: 425px;" src="https://bandcamp.com/EmbeddedPlayer/album=4075670470/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/summer-nights">Summer Nights by yeddiejones</a></iframe>
+                    <iframe style="border: 0; width: 400px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=4075670470/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/summer-nights">Summer Nights by yeddiejones</a></iframe>
+                </div>
+
+                <div class="col-2">
+                    <iframe style="border: 0; width: 400px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2615382046/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://yeddiejones.bandcamp.com/album/number-1">numbeR 1 by yeddiejones</a></iframe>
                 </div>
             </div>
         </section>
+
+        <div class="full-width-quote">
+            <h3>
+                I put my music everywhere.. soundcloud, youtube, bandcamp and even instagram. 
+                Checkout the social medias on the left to follow along. Much love.
+            </h3>
+        </div>
 
         <footer>
             <p>hello</p>
