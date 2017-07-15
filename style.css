@@ -376,6 +376,9 @@ section.single-youtube-vid iframe{
     font-size: 32px;
     line-height: 60px;
 }
+.quote-more-pad{
+    padding: 3em;
+}
 
 
 
@@ -430,6 +433,13 @@ section{
     margin: 0 auto;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
+}
+
+#beautiful-img{
+    margin-top: -7em;
+}
+#good-img{
+    margin-top: -1em;
 }
 
 section#support{
