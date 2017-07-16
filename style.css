@@ -86,11 +86,12 @@ ul.social-media{
     top: 0;
     z-index: 1;
     padding: 1em;
-    margin-top: 15em;
+    /*margin-top: 15em;*/
 }
 ul.social-media li{
     list-style-type: none;
     padding: 3px;
+    display: inline;
 }
 ul.social-media li a:hover{
     cursor: pointer;
@@ -190,7 +191,8 @@ button{
     height: 48em;
 }
 img.album{
-    width: 35em;
+    /*width: 35em;*/
+    width: 95%;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .recent-album > div{
@@ -234,12 +236,12 @@ img.album{
 }
 
 .left-album-info{
-    float:left;
-    width: 61%;
+    /*float:left;*/
+    /*width: 61%;*/
 }
 .right-album-info{
-    float:right;
-    width: 30%;
+    /*float:right;*/
+    /*width: 30%;*/
 }
 
 .right-album-info h5,
@@ -253,19 +255,25 @@ img.album{
     margin: 0;
 }
 .right-album-info h3{
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;
     font-size: 1.5em;
-    margin-top: 15px;
+    margin-top: 15px;*/
+    margin-bottom: 1.2em;
+    font-size: 1em;
+    margin-top: 6px;
+    line-height: 30px;
 }
 .right-album-info h3.title{
-    font-size: 2em;
+    /*font-size: 2em;*/
+    font-size: 1.4em;
     color: purple;
 }
 
 
 section.music-section{
     background-color: white;
-    padding: 1em;
+    /*padding: 1em;*/
+    padding: 0;
 }
 
 section.music-section h3{
@@ -284,7 +292,7 @@ section.music-section iframe{
 }
 
 .single-youtube-vid{
-    padding: 1em;
+    padding: 0em;
     margin: 0;
     width: 100%;
 }
@@ -293,7 +301,8 @@ section.single-youtube-vid iframe{
     margin: 0 auto;
     margin-bottom: 2em;
     float: none;
-    padding: 1em;
+    /*padding: 1em;*/
+    padding: 0;
 }
 
 .two-columns{
@@ -354,7 +363,10 @@ section.single-youtube-vid iframe{
 }*/
 
 
-.album-title{}
+.album-title img{
+    width: 80%;
+    margin:0 auto;
+}
 #youaretitle{
     color: #47164F;
     text-align: center;
@@ -362,7 +374,8 @@ section.single-youtube-vid iframe{
 }
 
 .full-width-quote{
-    width: 70%;
+    /*width: 70%;*/
+    width: 85%;
     margin: 0 auto;
     font-style: italic;
     font-size: 2em;
@@ -370,11 +383,14 @@ section.single-youtube-vid iframe{
     color: #ccc5d0;
     text-align: center;
     padding: 1em;
+
 }
 .full-width-quote h3{
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 32px;
-    line-height: 60px;
+    /*font-size: 32px;*/
+    /*line-height: 60px;*/
+    font-size: 20px;
+    line-height: 34px;
 }
 .quote-more-pad{
     padding: 3em;
@@ -384,7 +400,8 @@ section.single-youtube-vid iframe{
 
 
 .half-height-image{
-    height: 40em;
+    /*height: 40em;*/
+    height: 9em;
     overflow: hidden;
 }
 
@@ -393,7 +410,8 @@ section.single-youtube-vid iframe{
 section{
     /*width: 100%;*/
     background-color: #e1e1e1;
-    padding: 2em;
+    /*padding: 2em;*/
+    padding: 1em;
     margin-top: 5em;
     margin-bottom: 5em;
 }
@@ -423,7 +441,8 @@ section{
 }
 .text-over-image{
     position: absolute;
-    top: 50%;
+    /*top: 50%;*/
+    top: 36%;
     width: 100%;
 }
 .img-embed h4{
@@ -444,17 +463,21 @@ section{
 
 section#support{
     background-color: #4ddde4;
-    margin-top: 7em;
+    /*margin-top: 7em;*/
+    padding: 2em;
 }
 section#support h4{
-    font-size: 3em;
+    /*font-size: 3em;*/
+    font-size: 2em;
     color: #4a4a4a;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
-    margin: 19px;
+    /*margin: 19px;*/
+    margin:0;
+    margin-bottom: 10px;
 }
 section#support p{
-    width: 43%;
+    /*width: 43%;*/
     margin: 0 auto;
     font-size: 1em;
     text-align: center;
@@ -466,14 +489,15 @@ section#support p{
 
 section.story-section{
     background-color: white;
-    width: 60%;
-    font-size: 20px;
+    /*width: 60%;*/
+    /*font-size: 20px;*/
+    font-size: 17px;
     margin:0 auto;
     line-height: 40px;
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
 }
 section.story-section h3{
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
@@ -482,6 +506,7 @@ section.story-section p{
     color: #4a4a4a;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
+    line-height: 33px;
 }
 
 footer{
