@@ -115,13 +115,14 @@ ul.social-media li a img:hover{
     /*background-image: url("chris.jpg");*/
     background-image: url("christin-hume-299790.jpg");
     /* Set a specific height */
-    height: 40%;
+    height: 14em;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     margin-bottom: 3em;
+    background-position-y: -18em;
 }
 h1.logo{
     text-align: center;
@@ -507,7 +508,8 @@ footer{
 @media (min-width: 800px){
     ul.social-media{
         position: fixed;
-        margin-top: 47px;
+        margin-top: 13.5em;
+        z-index: 1;
     }
     ul.social-media li{
         display: block;
