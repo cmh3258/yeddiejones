@@ -176,7 +176,8 @@ button{
 .recent-album{
     position: relative;
     margin: 1em;
-    height: 48em;
+    /*height: 48em;*/
+    height: 26em;
 }
 img.album{
     width: 95%;
@@ -190,7 +191,8 @@ img.album{
 }
 .recent-album .info,
 .the-album .info{
-    width: 50%;
+    /*width: 50%;*/
+    width: 67%;
     margin: 0 auto;
     font-size: 18px;
     font-family: 'Ubuntu Mono', monospace;
@@ -247,7 +249,8 @@ section.music-section{
 }
 
 section.music-section h3{
-    font-size: 4em;
+    /*font-size: 4em;*/
+    font-size: 2em;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
@@ -259,7 +262,11 @@ section.music-section iframe{
     margin-bottom: 2em;
     /*float: left;*/
     padding: 1em;
-    width: 100%;
+    width: 90%;
+}
+section.music-section .col-2 iframe{
+    width: 92%;
+    height: 20em;
 }
 
 .single-youtube-vid{
@@ -276,7 +283,7 @@ section.single-youtube-vid iframe{
 }
 
 .two-columns{
-    /*width: 80%;*/
+    width: 80%;
     overflow: auto;
     margin: 0 auto;
 }
@@ -286,7 +293,8 @@ section.single-youtube-vid iframe{
 }
 
 .soundcloud-frame{
-    width: 45%;
+    /*width: 45%;*/
+    width: 90%;
     margin: 0 auto;
     overflow: auto;
 }
@@ -361,8 +369,8 @@ section{
     background-color: #e1e1e1;
     /*padding: 2em;*/
     padding: 1em;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .btn-section{
@@ -455,7 +463,32 @@ footer{
 }
 
 
+@media (min-width: 375px){
+    .recent-album {
+        height: 35em;
+    }    
+}
+
+@media (min-width: 500px){
+    .recent-album {
+        height: 41em;
+    }
+    section.music-section iframe{
+        height: 13em;
+    }
+}
+
 @media (min-width: 600px){
+    .recent-album {
+        height: 48em;
+    }
+    .two-columns{
+        width: 100%;
+    }
+    section.music-section h3{
+        font-size: 3em;
+    }
+
     #youaretitle{
         width: 10em;
     }    
@@ -528,6 +561,32 @@ footer{
 }
 
 @media (min-width: 1200px){
+    .two-columns {
+        width: 80%;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    .two-columns > iframe{
+        width: 45%;
+        display: inline-block !important;
+    }
+    /*section.music-section iframe{
+        display: inline-block;
+    }*/
+    .soundcloud-frame{
+        width: 45%;
+    }
+    .soundcloud-frame iframe{
+        width: 95% !important;
+    }
+    .col-2{
+        width: 49%;
+        display: inline-block;
+    }
+    .narrower{
+        width: 72%;
+    }
+
     .half-height-image{
         height: 33em;
     }
