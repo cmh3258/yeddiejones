@@ -19,15 +19,12 @@ html, body{
 }
 html > body{
     background: white;
-
 }
 
 /* NAV */
 nav {
     position: absolute;
-    top: 0;/*
-    right: 0;*/
-    /*margin: 10px;*/
+    top: 0;
     width: 98%
 }
 nav ul {
@@ -35,7 +32,6 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
 }
 
 nav li {
@@ -48,13 +44,10 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 10px;
     text-decoration: none;
-    /*font-family: Zooja;*/
     font-size: 16px;
-    /*font-family: 'Patrick Hand SC', cursive;*/
     font-family: 'Ubuntu Mono', monospace;
-    /*text-transform: uppercase;*/
     -webkit-font-smoothing: antialiased;
 }
 nav.dark-nav li a{
@@ -80,17 +73,15 @@ nav .active {
     opacity: 1;
 }
 
-/* SOcial media nav */
+/* Social media nav */
 ul.social-media{
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    position: absolute;
+    margin-top: 47px;
     padding: 1em;
-    /*margin-top: 15em;*/
 }
 ul.social-media li{
     list-style-type: none;
-    padding: 3px;
+    padding: 8px;
     display: inline;
 }
 ul.social-media li a:hover{
@@ -106,15 +97,14 @@ ul.social-media li a img:hover{
 
 .container{
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero{
     background-image: url("chris.jpg");
     background-image: url("20170622-IMG_6733.jpg");
-
     /* Set a specific height */
     height: 70%;
-
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -124,11 +114,8 @@ ul.social-media li a img:hover{
 .hero-smaller{
     /*background-image: url("chris.jpg");*/
     background-image: url("christin-hume-299790.jpg");
-
-
     /* Set a specific height */
     height: 40%;
-
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -174,6 +161,7 @@ button{
     cursor: pointer;
     border: 1px solid #4a4a4a;
     font-size: 14px;
+    margin-bottom: 6px;
 }
 
 #landing-wrapper {
@@ -191,15 +179,12 @@ button{
     height: 48em;
 }
 img.album{
-    /*width: 35em;*/
     width: 95%;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .recent-album > div{
-    /*position: absolute;*/
     margin: 0 auto;
     text-align: center;
-    /*margin-top: -6em;*/
     padding: 2em;
     margin-top: 2em;
 }
@@ -210,7 +195,6 @@ img.album{
     font-size: 18px;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
-    /*color: white;*/
     margin-top: 3em;
 }
 .the-album .info{
@@ -235,15 +219,6 @@ img.album{
     padding: 2em;
 }
 
-.left-album-info{
-    /*float:left;*/
-    /*width: 61%;*/
-}
-.right-album-info{
-    /*float:right;*/
-    /*width: 30%;*/
-}
-
 .right-album-info h5,
 .right-album-info h3{
     text-align: left;
@@ -255,16 +230,12 @@ img.album{
     margin: 0;
 }
 .right-album-info h3{
-    /*margin-bottom: 2em;
-    font-size: 1.5em;
-    margin-top: 15px;*/
     margin-bottom: 1.2em;
     font-size: 1em;
     margin-top: 6px;
     line-height: 30px;
 }
 .right-album-info h3.title{
-    /*font-size: 2em;*/
     font-size: 1.4em;
     color: purple;
 }
@@ -272,7 +243,6 @@ img.album{
 
 section.music-section{
     background-color: white;
-    /*padding: 1em;*/
     padding: 0;
 }
 
@@ -287,8 +257,9 @@ section.music-section iframe{
     display: block;
     margin: 0 auto;
     margin-bottom: 2em;
-    float: left;
+    /*float: left;*/
     padding: 1em;
+    width: 100%;
 }
 
 .single-youtube-vid{
@@ -301,18 +272,16 @@ section.single-youtube-vid iframe{
     margin: 0 auto;
     margin-bottom: 2em;
     float: none;
-    /*padding: 1em;*/
     padding: 0;
 }
 
 .two-columns{
-    width: 80%;
+    /*width: 80%;*/
     overflow: auto;
     margin: 0 auto;
-
 }
 .two-columns > iframe{
-    width: 45%;
+    /*width: 45%;*/
     display: inline-block;
 }
 
@@ -323,8 +292,8 @@ section.single-youtube-vid iframe{
 }
 
 .col-2{
-    width: 49%;
-    display: inline-block;
+    /*width: 49%;
+    display: inline-block;*/
 }
 .col-2 iframe{
     float: none !important;
@@ -333,44 +302,24 @@ section.single-youtube-vid iframe{
 
 .narrower{
     width: 70%;
+    width: 92%;
     margin: 0 auto;
 }
 
-/*.recent-album > div {
-    position: absolute;
-    margin-top: -10%;
-    left: 10%;
-    width: 80%;
-}
-.recent-album img{
-    float: left;
-    /*padding: 3em;*/
-    /*margin: 4em;*/
-}
-/*.recent-album .info{
-    float: right;
-    width: 50%;
-    margin-top: 15%;
-    font-size: 19px;
-    line-height: 27px;
-    color: #4a4a4a;
-}*/
 
-/*recent-album-center{
-    width: 80%;
-    margin: 0 auto;
+
+h1.albumtitle{
+    width: 100%;
     text-align: center;
-}*/
-
-
-.album-title img{
-    width: 80%;
-    margin:0 auto;
 }
 #youaretitle{
-    color: #47164F;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 2.6em;
+}
+#youaretitle img{
+    color: #47164F;
+    padding-top: 3.6em;
+    width: 60%;
 }
 
 .full-width-quote{
@@ -393,7 +342,7 @@ section.single-youtube-vid iframe{
     line-height: 34px;
 }
 .quote-more-pad{
-    padding: 3em;
+    /*padding: 3em;*/
 }
 
 
@@ -454,30 +403,21 @@ section{
     -webkit-font-smoothing: antialiased;
 }
 
-#beautiful-img{
-    margin-top: -7em;
-}
-#good-img{
-    margin-top: -1em;
-}
+
 
 section#support{
     background-color: #4ddde4;
-    /*margin-top: 7em;*/
     padding: 2em;
 }
 section#support h4{
-    /*font-size: 3em;*/
     font-size: 2em;
     color: #4a4a4a;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
-    /*margin: 19px;*/
     margin:0;
     margin-bottom: 10px;
 }
 section#support p{
-    /*width: 43%;*/
     margin: 0 auto;
     font-size: 1em;
     text-align: center;
@@ -489,18 +429,17 @@ section#support p{
 
 section.story-section{
     background-color: white;
-    /*width: 60%;*/
-    /*font-size: 20px;*/
+    width: 92%;
     font-size: 17px;
     margin:0 auto;
     line-height: 40px;
-    /*margin-bottom: 2em;*/
 }
 section.story-section h3{
     font-size: 2em;
     text-align: center;
     font-family: 'Ubuntu Mono', monospace;
     -webkit-font-smoothing: antialiased;
+    margin: 1em 0px 0px;
 }
 section.story-section p{
     color: #4a4a4a;
@@ -513,5 +452,150 @@ footer{
     background-color: #e1e1e1;
     color: #4a4a4a;
     padding: 5em;
+}
+
+
+@media (min-width: 600px){
+    #youaretitle{
+        width: 10em;
+    }    
+    section.music-section iframe{
+        width: 80%;
+        height: 20em;
+    }
+    section.story-section{
+        width: 75%;
+    }
+    .half-height-image{
+        height: 14em;
+    }
+}
+
+@media (min-width: 800px){
+    ul.social-media{
+        position: fixed;
+        margin-top: 47px;
+    }
+    ul.social-media li{
+        display: block;
+    }
+
+    .left-album-info{
+        float: left;
+        width: 61%;
+    }
+    img.album{
+        width: 23em;
+    }
+    section#support p {
+        width: 79%;
+    }
+
+    .img-embed img{
+        width: 80%;
+    }
+
+    .logo-icon-svg {
+        margin-left: 15px;
+        margin-top: -4px;
+    }
+
+}
+
+@media (min-width: 900px){
+    #youaretitle {
+        width: 17em;
+    }
+    .text-over-image{
+        top: 43%;
+    }
+    .half-height-image{
+        height: 21em;
+    }
+
+    .full-width-quote h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    section.music-section iframe {
+        width: 500px;
+        height: 18em;
+    }
+    section.music-section{
+        padding: 1em;
+    }
+}
+
+@media (min-width: 1200px){
+    .half-height-image{
+        height: 33em;
+    }
+    .text-over-image {
+        top: 46%;
+    }
+    .full-width-quote {
+        width: 70%;
+    }
+
+    section.story-section {
+        width: 60%;
+    }
+
+    .right-album-info h3.title{
+        font-size: 2em;
+    }
+    img.album {
+        width: 35em;
+    }
+    .the-album {
+        padding: 3em 0 2em;
+    }
+    .right-album-info h3 {
+        margin-bottom: 1.2em;
+        font-size: 1.5em;
+        margin-top: 12px;
+        line-height: 37px;
+    }
+
+    section#support p {
+        width: 66%;
+        font-size: 1.2em;
+        line-height: 35px;
+    }
+    section#support h4 {
+        font-size: 3em;
+        margin: 19px;
+        margin-bottom: 17px;
+    }
+
+    section.story-section{
+        margin-bottom: 3em;
+    }
+    section.story-section h3{
+        font-size: 3em;
+        margin: 1em;
+        margin-top: 2em;
+    }
+    section.story-section p {
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .img-embed img{
+        width: 88%;
+    }
+    .half-height-image{
+        height: 40em;
+    }
+    .text-over-image{
+        top: 48%;
+    }
+    #beautiful-img{
+        margin-top: -7em;
+    }
+    #good-img{
+        margin-top: -1em;
+    }
 }
 
