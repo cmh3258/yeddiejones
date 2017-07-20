@@ -32,7 +32,7 @@ a:hover{
 nav {
     position: absolute;
     top: 0;
-    width: 98%
+    width: 98%;
 }
 nav ul {
     list-style-type: none;
@@ -85,6 +85,7 @@ ul.social-media{
     position: absolute;
     margin-top: 47px;
     padding: 1em;
+    display:none;
 }
 ul.social-media li{
     list-style-type: none;
@@ -475,15 +476,19 @@ footer{
     margin-top: 2em;
 }
 footer > div{
-    width: 80%;
+    /*width: 80%;*/
     margin: 0 auto;
     text-align: center;
 }
 footer a{
     padding: 1em;
     color: white;
+    color: #00a77b;
     text-decoration: none;
     font-style: italic;
+    /*width: 100%;*/
+    display: block;
+    font-size: 24px;
 }
 footer a:hover{
     color: #940794;
@@ -536,6 +541,7 @@ footer a:hover{
         position: fixed;
         margin-top: 13.5em;
         z-index: 1;
+        display:inline-block;
     }
     ul.social-media li{
         display: block;
@@ -561,6 +567,10 @@ footer a:hover{
         margin-top: -4px;
     }
 
+    footer a{
+        display: inline-block;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 900px){
